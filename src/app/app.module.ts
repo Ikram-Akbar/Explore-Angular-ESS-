@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { serverComponent } from './server/server.component';
 import { NewsComponent } from './news/news.component';
-
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { NewsComponent } from './news/news.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

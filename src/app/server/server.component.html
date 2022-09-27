@@ -1,7 +1,31 @@
-<div class="container">
+<div class="container p-5">
     <div class="row">
         <div class="col-xs-12">
             <h1> employee id :{{serverId}} and status: {{serverStatus}} </h1>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<button class="btn btn-dark mt-5" [disabled]="!allowNewServer" (click)="onCreateServer()">Add a Server</button>
+<p> {{serverCreationStatus}} </p>
+<p [innerText]="allowNewServer"></p>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <label >Server Name</label> 
+            <input
+             class="form-control" 
+             type="text"
+             (input)="onUpdateServerName($event)"
+             >
+
+             <h5> {{serverName}} </h5>
         </div>
     </div>
 </div>
