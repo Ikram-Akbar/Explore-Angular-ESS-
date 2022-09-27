@@ -18,14 +18,13 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <label >Server Name</label> 
-            <input
-             class="form-control" 
-             type="text"
-             (input)="onUpdateServerName($event)"
-             >
+            <label>Server Name</label>
+            <!-- <input class="form-control" type="text" (input)="onUpdateServerName($event)"> -->
+            <input class="form-control" type="text" 
+            [(ngModel)]="serverName"
+            >
 
-             <h5> {{serverName}} </h5>
+            <h5> {{serverName}} </h5>
         </div>
     </div>
 </div>
