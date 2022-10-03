@@ -1,1 +1,50 @@
-<p>form works!</p>
+<div class="container m-5">
+  <div class="row">
+    <div class="col-md-6">
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="color" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            formControlName="username"
+          />
+
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            formControlName="password"
+          />
+        </div>
+        <div class="mb-3 form-check">
+         
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Example textarea</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            formControlName="textarea"
+          ></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<p>
+  {{ myForm.value | json }}
+</p>
