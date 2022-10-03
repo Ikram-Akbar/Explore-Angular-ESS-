@@ -7,7 +7,8 @@ import { serverComponent } from './server/server.component';
 import { NewsComponent } from './news/news.component';
 import { FormsModule } from '@angular/forms';
 import { StudentComponent } from './student/student.component';
-import { NewServerComponent } from './new-server/new-server.component'
+import { NewServerComponent } from './new-server/new-server.component';
+import { FormComponent } from './form/form.component'
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NewServerComponent } from './new-server/new-server.component'
     NewsComponent,
     StudentComponent,
     NewServerComponent,
+    FormComponent,
   
   ],
   imports: [
